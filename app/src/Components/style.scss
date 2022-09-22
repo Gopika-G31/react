@@ -1,7 +1,154 @@
-
-@import "~bootstrap/scss/bootstrap";
-
-body {
-  font-family: 'Nothing You Could Do', cursive;
+//font family-smooch
+@import url('https://fonts.googleapis.com/css2?family=Smooch&display=swap');
+.container-wrapper{
+  width: 100%;
   height: 100vh;
+  .card-wrapper{
+    border-top:12px dotted white;
+    background: repeating-linear-gradient(
+      to bottom,
+      white,
+      white 2px,
+      #98DDFC 2px,
+      #98DDFC 20px
+  )
+  }
+  .title{
+    font-family: 'Smooch', cursive;
+    color: #2B2C97;
+    font-size: 75px;
+    font-weight: 200;
+    line-height: 0.2;
+  }
+  .sub-title{
+    font-family:'Times New Roman', Times, serif;
+    color: #2B2C97;
+    font-size: 15px;
+    font-weight: 200;
+  }
+  .start-btn{
+    color: #D5F3FF;
+    background-color: #2B2C97;
+    border: none;
+    outline:none; 
+  }
+  .start-btn:hover{
+    background-color:white;
+    color: #2B2C97;
+    cursor: pointer;
+    border: none;
+    outline:none; 
+  }
+  .start-btn:focus{
+    background-color:white;
+    color: #2B2C97;
+    border: none;
+    outline:none;
+  } 
+}
+
+
+.addNoteModal{
+  .modal-header{
+    font-weight:bold;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 16px;  
+    .close-btn{
+      font-size:22px;
+      color:red;
+      cursor: pointer;
+    }
+    .close-btn:hover{
+      border-radius: 50%;
+      background-color: red;
+      color:white;
+      cursor: pointer;
+    }
+  }
+  .modal-body{
+    font-size: 14px;  
+    font-family: sans-serif;
+  }
+ 
+}
+.addedNotes-container{
+  background-color: white;
+  height: 100vh;
+  overflow-y: auto;
+  .title{
+    font-family: 'Smooch', cursive;
+    color: #2B2C97;
+    font-size:35px;
+    font-weight: 200;
+    line-height: 0.2;
+  }
+  .input-group-text{
+    background-color:#2B2C97;
+  }
+  .search{
+    font-size:22px;
+    color:#D5F3FF;
+  }
+  .add-icon,.delete-icon,.sort-icon{
+    font-size:35px;
+    color:#2B2C97;
+    cursor: pointer;
+  }
+  .sort-icon-text{
+    color:#2B2C97;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 12px;
+  }
+  .count{
+    border-radius: 70%;
+    width: 25px;
+    background-color: #D5F3FF;
+    color: navy;
+    text-align: center;
+    position: absolute;
+    margin-top: -51px;
+    margin-left:45px;
+  }
+  .addedNotes-cards{
+    border-top:10px dotted white;
+    background: repeating-linear-gradient(
+      to bottom,
+      white,
+      white 2px,
+      #98DDFC 2px,
+      #98DDFC 20px
+  );
+  .card-header{
+    color:#2B2C97;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 16px;
+    font-weight:bold;
+    line-height: 0.5;
+    background-color: transparent;
+    border: none;
+      .close-btn{
+        font-size:15px;
+        border-radius: 50%;
+        background-color:#2B2C97;
+        color: #98DDFC;
+        cursor: pointer;
+      }
+      .close-btn:hover{
+        border-radius: 50%;
+        background-color:white;
+        color:#2B2C97;
+        cursor: pointer;
+      }
+  }
+  .card-body{
+    color:#2B2C97;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 14px;
+    font-weight:500;
+    word-break: break-word;
+    text-align: justify;
+    line-height: 1.3;
+  }
+
+  }
 }

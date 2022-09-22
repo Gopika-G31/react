@@ -3,7 +3,8 @@ import AddedNotes from "./Components/AddedNotes";
 import {Provider}from 'react-redux';
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
 import store from "./store";
-import 'material-icons/iconfont/material-icons.scss'
+import 'material-icons/iconfont/material-icons.scss';
+
 function App() {
   return (
     <>

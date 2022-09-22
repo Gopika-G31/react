@@ -24,7 +24,6 @@ const AddNoteModal=(props)=>{
     }
     return(
         <>
-      
         <Modal
         {...props}
         show={props.show}
@@ -33,7 +32,7 @@ const AddNoteModal=(props)=>{
         aria-labelledby="contained-modal-title-vcenter"
         centered
         dialogClassName="addNoteModal">
-            <Modal.Header className='mx-3' closeButton>Add Notes Here</Modal.Header>
+            <Modal.Header className='mx-3'>Add Your Notes <span className='material-icons close-btn float-end' onClick={props.hide}>close</span></Modal.Header>
             <Modal.Body className='mx-3 mt-2'>
                 <Row className='mt-2'>
                   <Col>
@@ -65,8 +64,9 @@ const AddNoteModal=(props)=>{
                 </Row>
             </Modal.Body>
             <Modal.Footer>
-                <Button size='sm'  className='saveBtn' onClick={onSave}>Save</Button>
+            <Button size='sm'  variant='success' className='float-end' disabled={!title || !description} onClick={onSave}>Save</Button>
             </Modal.Footer>
+           
         </Modal>
 
       
